@@ -1,14 +1,14 @@
 <?php namespace Prettus\Validator\Exceptions;
 
-use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Contracts\Support\Jsonable;
+use Illuminate\Support\Contracts\ArrayableInterface;
+use Illuminate\Support\Contracts\JsonableInterface;
 use Illuminate\Support\MessageBag;
 
 /**
  * Class ValidatorException
  * @package Prettus\Validator\Exceptions
  */
-class ValidatorException extends \Exception implements Jsonable, Arrayable {
+class ValidatorException extends \Exception implements JsonableInterface, ArrayableInterface {
 
     /**
      * @var MessageBag

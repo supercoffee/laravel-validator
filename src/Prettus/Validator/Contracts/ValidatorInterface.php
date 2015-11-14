@@ -1,6 +1,7 @@
 <?php namespace Prettus\Validator\Contracts;
 
-use Illuminate\Contracts\Support\MessageBag;
+
+use Illuminate\Support\MessageBag;
 use Prettus\Validator\Exceptions\ValidatorException;
 
 /**
